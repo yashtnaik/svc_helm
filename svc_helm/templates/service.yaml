@@ -2,8 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ .Values.service.name }}
+  namespace: {{ .Values.namespace }}
   labels:
-    {{ .Values.service.label }}
+    {{ .Values.service.labels }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -11,4 +12,3 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-
