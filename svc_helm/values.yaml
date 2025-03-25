@@ -2,5 +2,6 @@ service:
   type: ClusterIP
   port: 80
   name: test-service-yash
-  labels: pilot
+  labels: 
+      service: my-svc
 namespace: tejas-naik
