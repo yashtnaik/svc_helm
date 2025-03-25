@@ -2,4 +2,4 @@ service:
   type: ClusterIP
   port: 80
   name: test-service
-  label: pilot
+  labels: pilot
